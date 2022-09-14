@@ -5,6 +5,14 @@ declare module 'styled-components' {
     colors: {
       primary: string
       secondary: string
+      tertiary: string
+      black: string
+      white: string
+    },
+    container:{
+      "max-width":string,
+      "margin":string,
+      "background-color":string
     }
   }
 }

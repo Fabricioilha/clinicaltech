@@ -1,12 +1,24 @@
 import type { AppProps } from 'next/app'
 import { ThemeProvider, DefaultTheme } from 'styled-components'
-import GlobalStyle from '../components/globalstyles'
+import GlobalStyle from '../components/styles/globalstyles'
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
+
 
 const theme: DefaultTheme = {
   colors: {
-    primary: '#111',
-    secondary: '#0070f3',
+    primary: '#27617e',
+    secondary: '#4e99ad',
+    tertiary: "#849daa",
+    white: "#fff",
+    black: "#000"
   },
+  container:{
+    "max-width":"1140px",
+    "margin": "auto",
+    "background-color":"transparent"
+  }
 }
 
 export default function App({ Component, pageProps }: AppProps) {
