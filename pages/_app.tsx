@@ -17,7 +17,8 @@ const theme: DefaultTheme = {
   container:{
     "max-width":"1140px",
     "margin": "auto",
-    "background-color":"transparent"
+    "background-color":"transparent",
+    "padding":"0.5rem"
   }
 }
 

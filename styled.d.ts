@@ -12,7 +12,8 @@ declare module 'styled-components' {
     container:{
       "max-width":string,
       "margin":string,
-      "background-color":string
+      "background-color":string,
+      "padding":string
     }
   }
 }
