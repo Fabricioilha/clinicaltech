@@ -82,6 +82,9 @@ const MyHero = styled.section`
         letter-spacing: 4px;
         line-height: 1.5rem;
     }
+    .BsideText{
+        font-size: 1.3rem;
+    }
     .carousel{
         overflow: hidden;
         padding: 1rem;
