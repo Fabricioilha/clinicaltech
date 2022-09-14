@@ -1,0 +1,56 @@
+export type ISalesEquipment= {
+    name:string,
+    image_url:string,
+    price:number,
+    brand:string
+}
+export const SalesEquipment = [
+    {
+        name:"Centrífuga",
+        brand:"Fanem",
+        image_url:"",
+        price:1200
+    },
+    {
+        name:"Banho Maria",
+        brand:"Imbras",
+        image_url:"",
+        price:800
+    },
+    {
+        name:"Autoclave",
+        brand:"Phoenix",
+        image_url:"",
+        price:5000
+    },
+    {
+        name:"Microscópio",
+        brand:"Nikon",
+        image_url:"",
+        price:2000
+    },
+    {
+        name:"Centrífuga",
+        brand:"Fanem",
+        image_url:"",
+        price:1200
+    },
+    {
+        name:"Banho Maria",
+        brand:"Imbras",
+        image_url:"",
+        price:800
+    },
+    {
+        name:"Autoclave",
+        brand:"Phoenix",
+        image_url:"",
+        price:5000
+    },
+    {
+        name:"Microscópio",
+        brand:"Nikon",
+        image_url:"",
+        price:2000
+    },
+]

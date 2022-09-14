@@ -7,7 +7,7 @@ import Mybutton from "../utils/MyButton"
 // COMPONENT // // COMPONENT // // COMPONENT // // COMPONENT // // COMPONENT //
 const Maintenance = ()=>{
     return(
-        <MySection>
+        <MySection id="manutencao">
             <div className="userImage">
                 <Image src={user} height={400} width={300} alt="boneco"/>
             </div>

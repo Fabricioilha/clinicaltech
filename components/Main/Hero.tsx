@@ -37,7 +37,7 @@ const Hero = ()=>{
                     </div>
                 </div>
             </div>
-            <div className="carousel">
+            <div className="equipment">
                 <div className="images">
                     <Image src={banhomaria} width={121} height={120} />
                     <Image src={banhomaria2} width={121} height={120} />
@@ -85,7 +85,7 @@ const MyHero = styled.section`
     .BsideText{
         font-size: 1.3rem;
     }
-    .carousel{
+    .equipment{
         overflow: hidden;
         padding: 1rem;
         display: flex;
