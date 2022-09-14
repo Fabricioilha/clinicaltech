@@ -34,4 +34,9 @@ const MyTeam = styled.section`
         gap: 10rem;
         margin-bottom: 5rem;
     }
+    @media only screen and (max-width: 880px) {
+        .container{
+            display: none;
+        }
+    }
 `
