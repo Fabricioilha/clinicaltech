@@ -1,4 +1,5 @@
 import Layout from '../components/Layout/Layout'
+import Contact from '../components/Main/Contact'
 import Hero from '../components/Main/Hero'
 import Maintenance from '../components/Main/Maintenance'
 import Sales from '../components/Main/Sales'
@@ -11,6 +12,7 @@ const Home = ()=> {
       <Maintenance />
       <Team />
       <Sales />
+      <Contact />
     </Layout>
   )
 }

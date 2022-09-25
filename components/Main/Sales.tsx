@@ -5,22 +5,20 @@ import Card from "../utils/Card"
 // COMPONENT // // COMPONENT // // COMPONENT // // COMPONENT // // COMPONENT //
 const Sales = ()=>{
     return(
-        <MySales>
+        <MySales id="vendas">
             <div className="container">
                 <h2>Venda de Equipamentos Novos e Usados</h2>
                 {
                     SalesEquipment.map((item, index)=> (
-                        <Card name={item.name} brand={item.brand} image_url={item.image_url} price={item.price} />
+                        <Card key={index} name={item.name} brand={item.brand} image_url={item.image_url} price={item.price} />
                     ))
                 }
-
             </div>
         </MySales>
     )
 }
 
 export default Sales
-
 
 
 // STYLESHEET // // STYLESHEET // // STYLESHEET // // STYLESHEET // // STYLESHEET // 
