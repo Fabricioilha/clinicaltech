@@ -44,20 +44,20 @@ const MyTeam = styled.section`
     ${({theme}) => theme.container} ;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     margin-bottom: 2rem;
     background-color: ${({theme}) => theme.colors.tertiary};
     color: ${({theme}) => theme.colors.white};
     border-radius: 10px;
-    padding: 2rem;
+    padding: 1rem;
 }
 .content{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 3rem;
-    padding: 3rem 1rem;
+    gap: 2rem;
+    padding: 2rem 1rem;
     p{
         max-width: 320px;
     }
