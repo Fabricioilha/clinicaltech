@@ -6,12 +6,15 @@ const Sales = ()=>{
     const [data, setData] = useState<any[]>()
     const [showMore, setShowMore] = useState(true)
     const [ qtd, setQtd ] = useState(5)
+    
     useEffect(()=>{getJson()},[])
+
     const getJson = async ()=>{
         const res = await fetch("https://jsonplaceholder.typicode.com/photos")
         const json = await res.json()
         setData(json)
     }
+    
     const handleClickLoadMore = () =>{
         setShowMore(false)
         setQtd(20)
@@ -44,15 +47,17 @@ const Sales = ()=>{
         </MySales>
     )
 }
+
 /*
 export const getServerSideProps =  async () => {
     // Fetch data from external API
-    const res = await fetch(`https://makeup-api.herokuapp.com/api/v1/products.json`)
+    const res = await fetch(`https://jsonplaceholder.typicode.com/photos`)
     const data = await res.json()
     // Pass data to the page via props
     return { props: { data } }
   }
 */
+
 export default Sales
 
 
@@ -100,7 +105,7 @@ const MySales = styled.section`
         z-index: 0;
     }
     .card:hover{
-        transform: scale(1.2);
+        transform: scale(1.1);
         z-index: 1;
     }
     .pbtn{
