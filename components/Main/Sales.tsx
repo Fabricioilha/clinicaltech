@@ -27,7 +27,7 @@ const Sales = ()=>{
                 <h2>Venda de Equipamentos Novos e Usados</h2>
                 <div className="cards" >
                     {data && data.slice(0,qtd).map((item, index)=>(
-                        <div className="card">
+                        <div className="card" key={index}>
                             <p>{item.title}</p>
                             <img src={`${item.thumbnailUrl}`} width={100} height={100} />
                             <p>Marca / Modelo</p>
