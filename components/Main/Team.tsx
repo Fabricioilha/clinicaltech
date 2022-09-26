@@ -59,7 +59,7 @@ const MyTeam = styled.section`
     gap: 2rem;
     padding: 2rem 1rem;
     p{
-        max-width: 320px;
+        max-width: 300px;
     }
 }
 `
