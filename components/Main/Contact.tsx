@@ -22,7 +22,7 @@ const Contact = ()=>{
                         </label>
                         <label htmlFor="">
                             <p>Mensagem</p>
-                            <textarea rows={10} cols={30} />
+                            <textarea rows={10} />
                         </label>
                         <input type="submit" value="Enviar" className="submit"/>
                     </form>
@@ -59,13 +59,22 @@ const MyContact = styled.section`
     .container{
         ${({theme}) => theme.container} ;
         display: flex;
-        flex-wrap: wrap;
         position: relative;
         padding: 1rem;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     p{
         margin: 1rem 0;
+    }
+    .form{
+        width: 50%;
+    }
+    .emails{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
     }
     input{
         width: 100%;
@@ -81,8 +90,10 @@ const MyContact = styled.section`
         border: none;
         box-shadow: 0 0 5px #0000009e;
         outline: none;
+        width:100%;
     }
-     h2{
+    
+    h2{
         text-align: center;
         margin: 2rem 0;
     }
@@ -95,5 +106,16 @@ const MyContact = styled.section`
         flex-direction:column;
         gap: 1.5rem;
         font-size: 1.3rem 
+    }
+    @media only screen and (max-width: 600px) {
+        .container{
+            flex-direction: column;
+        }
+        .form{
+            width: 100%;
+        }
+        .emails{
+            width: 100%;
+        }
     }
 `
