@@ -1,9 +1,14 @@
+import Link from "next/link"
 import styled from "styled-components"
 
 const Mybutton = ()=>{
     return(
         <Btn>
-            Solicitar Orçamento
+            <Link href="/budget">
+                <a>
+                    Solicitar Orçamento
+                </a>
+            </Link>
         </Btn>
     )
 }
