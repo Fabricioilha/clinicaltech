@@ -19,13 +19,6 @@ const theme: DefaultTheme = {
     "margin": "auto",
     "background-color":"transparent",
     "padding":"0.5rem"
-  },
-  carousel:{
-    "700":700,
-    "600":600,
-    "500":500,
-    "400":400,
-    "300":300
   }
 }
 

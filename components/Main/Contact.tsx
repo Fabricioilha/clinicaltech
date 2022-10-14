@@ -41,7 +41,6 @@ const Contact = ()=>{
                         <p>Ouvidoria</p>
                         <p><span>ouvidoria@clinicaltech.com.br</span></p>
                     </div>
-                    
                 </div>
                 
             </div>

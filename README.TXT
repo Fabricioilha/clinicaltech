@@ -22,3 +22,11 @@ idéia:
     
     O Sistema enviará um email para cada atividade do cliente alertando tal atividade.
 
+No projeto:
+    Botão "Solicitar Orçamento":
+        Verificar se o cliente está logado:
+        Caso não esteja: Direcionar para página de login
+        Após logado:
+            Disponibilizar formulário para solicitar a manutenção
+            
+            

@@ -14,13 +14,6 @@ declare module 'styled-components' {
       "margin":string,
       "background-color":string,
       "padding":string
-    },
-    carousel:{
-      "700":number,
-      "600":number,
-      "500":number,
-      "400":number,
-      "300":number
     }
   }
 }

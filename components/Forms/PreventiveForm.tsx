@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import Contact from "../Main/Contact"
 
 // COMPONENT // // COMPONENT // // COMPONENT // // COMPONENT // // COMPONENT //
 const PreventiveForm = ()=>{
@@ -6,9 +7,11 @@ const PreventiveForm = ()=>{
         <MyPreventiveForm>
             <div className="container">
                 <h1>Manutenção Preventiva</h1>
-                <form action="">
-                    <label htmlFor=""></label>
-                </form>
+                <br />
+                <br />
+                <h2>Para manutenção preventiva é necessário marcar uma reunião.</h2>
+
+                <Contact />
             </div>
         </MyPreventiveForm>
     )
