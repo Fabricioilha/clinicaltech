@@ -12,7 +12,9 @@ const Header = ()=>{
     const setMargin = () =>{
         showMenu? setShowMenu(false) : setShowMenu(true)
     }
-    useEffect(()=>{ setShowMenu(false) },[])
+    useEffect(()=>{ 
+        setShowMenu(false) 
+    },[])
     
     return(
         <MyHeader>

@@ -10,7 +10,6 @@ const PreventiveForm = ()=>{
                 <br />
                 <br />
                 <h2>Para manutenção preventiva é necessário marcar uma reunião.</h2>
-
                 <Contact />
             </div>
         </MyPreventiveForm>

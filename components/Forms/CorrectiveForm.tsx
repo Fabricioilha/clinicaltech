@@ -7,67 +7,69 @@ const CorrectiveForm = ()=>{
             <div className="container">
                 <h1>Manutenção Corretiva</h1>
                 <form action="">
-                    <label htmlFor="">
-                        <span className="g-responsavel">
-                            <p>Responsável</p>
-                            <input type="text" /> 
-                        </span>
-                    </label>
-                    <label htmlFor="">
-                        <span className="g-empresa">
-                            <p>Empresa</p>
-                            <input type="text" /> 
-                        </span>
-                    </label>
-                    <label htmlFor="">
-                        <span className="g-cnpj">
-                            <p>CNPJ</p>
-                            <input type="text" /> 
-                        </span>
-                    </label>
-                    <label htmlFor="">
-                        <span className="g-email">
-                            <p>Email</p>
-                            <input type="email" /> 
-                        </span>
-                    </label>
-                    <label htmlFor="">
-                        <span className="g-telefone">
-                            <p>Telefone</p>
-                            <input type="text" /> 
-                        </span>
-                    </label>
-                    <label htmlFor="">
-                        <span className="g-endereco">
-                            <p>Endereço</p>
-                            <input type="text" /> 
-                        </span>
-                    </label>
-                    <label htmlFor="">
-                        <span className="g-equipamento">
-                            <p>Equipamento</p>
-                            <input type="text" /> 
-                        </span>
-                    </label>
-                    <label htmlFor="">
-                        <span className="g-marca">
-                            <p>Marca / Modelo</p>
-                            <input type="text" /> 
-                        </span>
-                    </label>
-                    <label htmlFor="">
-                        <span className="g-serie">
-                            <p>Número De Série</p>
-                            <input type="text" /> 
-                        </span>
-                    </label>
-                    <label htmlFor="">
-                        <span className="g-defeito">
-                            <p>Defeito</p>
-                            <input type="text" /> 
-                        </span>
-                    </label>
-                    <br />
+                    <div className="inputs">
+                        <label htmlFor="">
+                            <span className="g-responsavel">
+                                <p>Responsável</p>
+                                <input type="text" /> 
+                            </span>
+                        </label>
+                        <label htmlFor="">
+                            <span className="g-empresa">
+                                <p>Empresa</p>
+                                <input type="text" /> 
+                            </span>
+                        </label>
+                        <label htmlFor="">
+                            <span className="g-cnpj">
+                                <p>CNPJ</p>
+                                <input type="text" /> 
+                            </span>
+                        </label>
+                        <label htmlFor="">
+                            <span className="g-email">
+                                <p>Email</p>
+                                <input type="email" /> 
+                            </span>
+                        </label>
+                        <label htmlFor="">
+                            <span className="g-telefone">
+                                <p>Telefone</p>
+                                <input type="text" /> 
+                            </span>
+                        </label>
+                        <label htmlFor="">
+                            <span className="g-endereco">
+                                <p>Endereço</p>
+                                <input type="text" /> 
+                            </span>
+                        </label>
+                        <label htmlFor="">
+                            <span className="g-equipamento">
+                                <p>Equipamento</p>
+                                <input type="text" /> 
+                            </span>
+                        </label>
+                        <label htmlFor="">
+                            <span className="g-marca">
+                                <p>Marca / Modelo</p>
+                                <input type="text" /> 
+                            </span>
+                        </label>
+                        <label htmlFor="">
+                            <span className="g-serie">
+                                <p>Número De Série</p>
+                                <input type="text" /> 
+                            </span>
+                        </label>
+                        <label htmlFor="">
+                            <span className="g-defeito">
+                                <p>Defeito</p>
+                                <input type="text" /> 
+                            </span>
+                        </label>
+                        <br />
+                    </div>
                     <input type="submit" value="Enviar" className="btn-submit" />
                 </form>
             </div>
@@ -86,27 +88,36 @@ const MyCorrectiveForm = styled.section`
         h1{
             margin: 1rem 0;
         }
-    }
-    .label>p{
-        margin: 1rem 0;
-    }
-    input{
-        width: 300px;
-        border: none;
-        box-shadow: 0 0 3px #00000073;
-        border-radius: 3px;
-        outline: none;
-        padding: 0.5rem;
-        margin: 0.5rem 0;
-    }
-    .btn-submit{
-        cursor: pointer;
-        transition: all ease .3s;
-        text-transform: uppercase;
-        font-weight: bold;
-    }
-    .btn-submit:hover{
-        box-shadow: 2px 2px 3px #222;
-        color: #03550a;
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .inputs{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+            input{
+                padding: 0.6rem;
+                width: 300px;
+                outline: none;
+                border: none;
+                box-shadow: -1px -1px 0 #0000005c, 0 0 5px #0000006a;
+                border-radius: 5px;
+            }
+        }
+        .btn-submit{
+            width: 300px;
+            padding: .5rem;
+            margin: 4rem;
+            border: none;
+            box-shadow: 0 0 5px #0000006e;
+            border-radius: 2px;
+            cursor: pointer;
+        }
     }
 `
