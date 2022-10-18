@@ -14,18 +14,18 @@ const Team = () => {
         <MyTeam id="team">
             <div className="container">
                 <h1>Nosso Time de Especialistas</h1>
-                <Carousel autoPlay showThumbs={false} emulateTouch infiniteLoop showStatus={false}>
+                <Carousel width={400} autoPlay showThumbs={false} emulateTouch infiniteLoop showStatus={false}>
                     {
-                        Employees.map((item, index)=>(
+                        Employees.map((item, index) => (
                             <div key={index}>
-                                
+
                                 <div className="content">
                                     <h2>{item.title}</h2>
-                                    <Image src={imageplaceholder} height={300} width={300} style={{borderRadius:"50%"}} />
-                                    <p>"{item.name}"</p>                                    
+                                    <img src={imageplaceholder.src} className='photo'/>
+                                    <p>"{item.name}"</p>
                                     <p>{item.desc}</p>
-                                </div>                                                                                 
-                            </div>                            
+                                </div>
+                            </div>
                         ))
                     }
                 </Carousel>
@@ -41,15 +41,20 @@ export default Team
 const MyTeam = styled.section`
 
 .container{
-    ${({theme}) => theme.container} ;
+    ${({ theme }) => theme.container} ;
     display: flex;
+    place-items:center;
     flex-direction: column;
     gap: 1rem;
     margin-bottom: 2rem;
-    background-color: ${({theme}) => theme.colors.tertiary};
-    color: ${({theme}) => theme.colors.white};
+    background-color: ${({ theme }) => theme.colors.tertiary};
+    color: ${({ theme }) => theme.colors.white};
     border-radius: 10px;
     padding: 1rem;
+    @media (max-width: 514px){
+        width:412px;
+    }
+        
 }
 .content{
     display: flex;
@@ -60,6 +65,11 @@ const MyTeam = styled.section`
     padding: 2rem 1rem;
     p{
         max-width: 300px;
+    }
+    @media (max-width: 514px){
+        .photo{
+        width:50px;
+       }
     }
 }
 `
