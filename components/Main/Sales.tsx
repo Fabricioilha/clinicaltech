@@ -2,19 +2,10 @@ import { useEffect, useState } from "react"
 import styled from "styled-components"
 
 // COMPONENT // // COMPONENT // // COMPONENT // // COMPONENT // // COMPONENT //
-const Sales = ()=>{
-    const [data, setData] = useState<any[]>()
+const Sales = ({data})=>{
     const [showMore, setShowMore] = useState(true)
     const [ qtd, setQtd ] = useState(5)
-    
-    useEffect(()=>{getJson()},[])
 
-    const getJson = async ()=>{
-        const res = await fetch("https://jsonplaceholder.typicode.com/photos")
-        const json = await res.json()
-        setData(json)
-    }
-    
     const handleClickLoadMore = () =>{
         setShowMore(false)
         setQtd(20)
@@ -47,16 +38,6 @@ const Sales = ()=>{
         </MySales>
     )
 }
-
-/*
-export const getServerSideProps =  async () => {
-    // Fetch data from external API
-    const res = await fetch(`https://jsonplaceholder.typicode.com/photos`)
-    const data = await res.json()
-    // Pass data to the page via props
-    return { props: { data } }
-  }
-*/
 
 export default Sales
 

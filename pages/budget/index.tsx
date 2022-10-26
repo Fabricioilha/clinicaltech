@@ -1,8 +1,8 @@
 import { useState } from "react"
 import styled from "styled-components"
-import Layout from "../components/Layout/Layout"
-import CorrectiveForm from "../components/Forms/CorrectiveForm"
-import PreventiveForm from "../components/Forms/PreventiveForm"
+import Layout from "../../components/Layout/Layout"
+import CorrectiveForm from "../../components/Forms/CorrectiveForm"
+import PreventiveForm from "../../components/Forms/PreventiveForm"
 import { NextPage } from "next"
 
 // COMPONENT // // COMPONENT // // COMPONENT // // COMPONENT // // COMPONENT //
@@ -40,5 +40,11 @@ const MyBudget = styled.section`
         box-shadow: 0 0 3px #00000081;
         margin: 0.5rem 0;
         cursor: pointer;
+    }
+    @media only screen and (max-width: 880px) {
+        text-align: center;
+        .btn{
+            margin: 2rem 0;
+        }
     }
 `

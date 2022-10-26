@@ -5,7 +5,7 @@ const CorrectiveForm = ()=>{
     return(
         <MyCorrectiveForm>
             <div className="container">
-                <h1>Manutenção Corretiva</h1>
+                <h1 style={{textAlign:"center"}}>Manutenção Corretiva</h1>
                 <form action="">
                     <div className="inputs">
                         <label htmlFor="">
@@ -106,7 +106,7 @@ const MyCorrectiveForm = styled.section`
                 width: 300px;
                 outline: none;
                 border: none;
-                box-shadow: -1px -1px 0 #0000005c, 0 0 5px #0000006a;
+                box-shadow: -1px -1px 0 #211c665c, 0 0 5px #0000006a;
                 border-radius: 5px;
             }
         }

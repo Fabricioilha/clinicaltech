@@ -6,7 +6,7 @@ const PreventiveForm = ()=>{
     return(
         <MyPreventiveForm>
             <div className="container">
-                <h1>Manutenção Preventiva</h1>
+                <h1 style={{textAlign:"center"}}>Manutenção Preventiva</h1>
                 <br />
                 <br />
                 <h2>Para manutenção preventiva é necessário marcar uma reunião.</h2>

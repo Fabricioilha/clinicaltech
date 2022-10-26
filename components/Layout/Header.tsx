@@ -15,7 +15,7 @@ const Header = ()=>{
     useEffect(()=>{ 
         setShowMenu(false) 
     },[])
-    
+
     return(
         <MyHeader>
             <div className="container">
@@ -26,7 +26,7 @@ const Header = ()=>{
                 <div className="menu">
                     <div className="menulist" style={{ margin:`${showMenu? "0px": "-150px"}`}}>
                         <ul>
-                            <Link href="/#manutencao" ><li>Manutenção</li></Link>
+                            <Link href="/#manutencao"><li>Manutenção</li></Link>
                             <Link href="/#vendas" ><li>Vendas</li></Link>
                             <Link href="/#team" ><li>Equipe</li></Link>
                             <Link href="/#contact" ><li>Contato</li></Link>
@@ -35,7 +35,7 @@ const Header = ()=>{
                     </div>
                 </div>
                 <ul>
-                    <Link href="/#manutencao" ><li>Manutenção</li></Link>
+                    <Link href="/#manutencao"><li>Manutenção</li></Link>
                     <Link href="/#vendas" ><li>Vendas</li></Link>
                     <Link href="/#team" ><li>Equipe</li></Link>
                     <Link href="/#contact" ><li>Contato</li></Link>

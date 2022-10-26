@@ -14,7 +14,7 @@ const Team = () => {
         <MyTeam id="team">
             <div className="container">
                 <h1>Nosso Time de Especialistas</h1>
-                <Carousel autoPlay showThumbs={false} emulateTouch infiniteLoop showStatus={false}>
+                <Carousel autoPlay showThumbs={false} emulateTouch infiniteLoop showStatus={false} swipeable={false}>
                     {
                         Employees.map((item, index)=>(
                             <div key={index}>
